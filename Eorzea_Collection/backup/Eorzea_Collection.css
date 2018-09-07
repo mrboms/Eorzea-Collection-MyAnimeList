@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
+@\import "https://malscraper.azurewebsites.net/covers/anime/Skunio/presets/dataimagelinkafter";
 
-/* Latest Updates: 19.08.2018
+/* Latest Updates: 02.09.2018
 	Original page design from ffxiv.eorzeacollection.com by Edeon Vails.
 	List CSS and adaption by MurakumoJP.
 	GitHub: https://github.com/Murakumo-JP/MyAnimeList-CSS
@@ -114,8 +114,7 @@ body .initialize-tutorial {
 }
 
 .status-menu-container .status-menu .status-button:before,
-.list-menu-float .icon-menu, .list-menu-float .icon-menu:not(.profile):hover,
-.list-container .list-unit .list-status-title .stats, 
+.list-menu-float .icon-menu, .list-menu-float .icon-menu:not(.profile):hover, 
 .list-container .status-menu-container .search-container #search-button,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .edit a::before, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .add a::before,
@@ -135,13 +134,19 @@ body .initialize-tutorial {
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before,
-.header .header-menu .list-menu .icon-menu, ::-webkit-scrollbar {
+.header .header-menu .list-menu .icon-menu, ::-webkit-scrollbar, #show-stats-button, #advanced-options-button,
+#advanced-options .btn-apply, #advanced-options .btn-clear, #advanced-options .sort-widget input[type=radio]:checked + label {
 	background-color: #f10834 !important;
+}
+
+#advanced-options .btn-apply:hover, #advanced-options .btn-clear:hover {
+    background-color: rgba(241, 8, 52, 0.8) !important;
 }
 
 .list-container .status-menu-container,.list-item:hover:before,
 .list-container .list-unit .list-stats, .list-unit::after, .list-container .cover-block, input[type='text'], 
-select, .initialize-tutorial:before, .initialize-tutorial .initialize-tutorial__message {
+select, .initialize-tutorial:before, .initialize-tutorial .initialize-tutorial__message, 
+#advanced-options .sort-widget input[type=radio]:checked + label {
 	border-color: #f10834 !important;
 }
 
@@ -150,7 +155,7 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link ,
 .header .header-menu .btn-menu #header-menu-button .fa, .header .header-menu .list-menu .icon-menu svg.icon,
 .header .header-menu .list-menu .icon-menu .text, .list-menu-float .icon-menu svg.icon, 
-.list-container .cover-block #cover-image-container .btn-list-setting, #advanced-options-button,
+.list-container .cover-block #cover-image-container .btn-list-setting,
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.image,
 .list-container .list-unit .list-table .list-item .list-table-data .data.status,
 .list-container .list-unit .list-table .list-item .list-table-data .data.number,
@@ -166,7 +171,8 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.retail,
 .status-menu-container .status-menu .status-button:after, .header-title.started, .header-title.finished, 
-.fa-info-circle:before {
+.fa-info-circle:before, #fancybox-close, .header-title.rated, .header-title.status, .header-title.number, 
+.header-title.title, .header-title.tags, .header-title.started {
     display: none !important;
 }
 
@@ -255,7 +261,7 @@ i.fa.fa-sort-asc.sort-icon,
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/search.png") #f10834;
+    background: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/search.png") #f10834;
     width: 28px;
     height: 28px;
     font-size: 0;
@@ -264,7 +270,7 @@ i.fa.fa-sort-asc.sort-icon,
 /* Cover Block */
 
 .list-container .cover-block {
-    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
+    background-image: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/cover-block-2.png");
     width: 1053px;
     height: 250px;
     background-color: #191919;
@@ -273,61 +279,6 @@ i.fa.fa-sort-asc.sort-icon,
     margin-right: 0;
     border: 1px solid #f10834;
 }
-
-/*.list-container .cover-block:before, .list-container .cover-block:after {
-	background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
-}
-
-.list-container .cover-block:before, .list-container .cover-block:after{
-	content: "";
-    display: block;
-    width: 655px;
-    height: 250px;
-	-webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
-}
-
-.list-container .cover-block:before {
-    clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
-	-webkit-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
-	-moz-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
-	-o-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
-}
-
-.list-container .cover-block:hover:before {
-    clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-webkit-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-moz-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-o-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-}
-
-.list-container .cover-block:after {
-    background-position: right;
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
-	-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
-	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
-	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
-    position: absolute;
-	right: 0.9px;
-    top: 1px;
-}
-
-.list-container .cover-block:hover:after {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-}
-
-.list-container .cover-block:hover:before, .list-container .cover-block:hover:after  {
-	width: 250px;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8;
-    transition: all 0.8s;
-}*/
 
 /* Hentai R-18 */
 
@@ -349,7 +300,7 @@ i.fa.fa-sort-asc.sort-icon,
     margin-top: 0px;
     padding: 2px 6px 2px 14px;
     margin-right: 14px;
-    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/RatingRX.png") #191919f2;
+    background: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/RatingRX.png") #191919f2;
     margin-left: -100%;
     opacity: 1;
 }
@@ -408,17 +359,17 @@ i.fa.fa-sort-asc.sort-icon,
 }
 
 .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
-	width: 370px;
+    width: 334px;
     height: 41px;
     top: 16px;
-    right: 20px;
+    right: 31px;
     background-color: transparent;
     text-align: left;
     opacity: 1;
 }
 
 body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
-    width: 460px !important;
+    width: 437px !important;
     right: 27px !important;
 }
 
@@ -983,14 +934,25 @@ a[href="/login.php"]:after {
   color: gray;
 }
 
-.header .header-menu .header-info a:last-child::after, .header .header-menu .list-menu .icon-menu.manga-list::after, .header .header-menu .list-menu .icon-menu.anime-list::after, .list-menu-float .icon-menu.profile::after, .list-menu-float .icon-menu .text, .list-container .status-menu-container .search-container #search-button::after, .list-container .list-unit .list-status-title .stats #show-stats-button::after, .list-container .list-unit .list-status-title .stats #advanced-options-button::after {
+.header .header-menu .header-info a:last-child::after, 
+.header .header-menu .list-menu .icon-menu.manga-list::after, 
+.header .header-menu .list-menu .icon-menu.anime-list::after, 
+.list-menu-float .icon-menu.profile::after, .list-menu-float .icon-menu .text, 
+.list-container .status-menu-container .search-container #search-button::after, 
+.list-container .list-unit .list-status-title .stats #show-stats-button::after, 
+.list-container .list-unit .list-status-title .stats #advanced-options-button::after {
   font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
   height: 16px;
   white-space: nowrap;
   color: inherit;
 }
 
-.header .header-menu .header-info a:last-child::after, .header .header-menu .list-menu .icon-menu.manga-list::after, .header .header-menu .list-menu .icon-menu.anime-list::after, .list-menu-float .icon-menu.profile::after, .list-container .status-menu-container .search-container #search-button::after, .list-container .list-unit .list-status-title .stats #show-stats-button::after, .list-container .list-unit .list-status-title .stats #advanced-options-button::after {
+.header .header-menu .header-info a:last-child::after, 
+.header .header-menu .list-menu .icon-menu.manga-list::after, 
+.header .header-menu .list-menu .icon-menu.anime-list::after, 
+.list-menu-float .icon-menu.profile::after, .list-container .status-menu-container .search-container #search-button::after, 
+.list-container .list-unit .list-status-title .stats #show-stats-button::after, 
+.list-container .list-unit .list-status-title .stats #advanced-options-button::after {
   position: absolute;
   overflow: hidden;
   width: 0;
@@ -1000,7 +962,13 @@ a[href="/login.php"]:after {
   transition-timing-function: ease-in-out;
 }
 
-.header .header-menu .header-info a:last-child:hover::after, .header .header-menu .list-menu .icon-menu.manga-list:hover::after, .header .header-menu .list-menu .icon-menu.anime-list:hover::after, .list-menu-float .icon-menu.profile:hover::after, .list-container .status-menu-container .search-container #search-button:hover::after, .list-container .list-unit .list-status-title .stats #show-stats-button:hover::after, .list-container .list-unit .list-status-title .stats #advanced-options-button:hover::after {
+.header .header-menu .header-info a:last-child:hover::after,
+.header .header-menu .list-menu .icon-menu.manga-list:hover::after, 
+.header .header-menu .list-menu .icon-menu.anime-list:hover::after, 
+.list-menu-float .icon-menu.profile:hover::after, 
+.list-container .status-menu-container .search-container #search-button:hover::after, 
+.list-container .list-unit .list-status-title .stats #show-stats-button:hover::after, 
+.list-container .list-unit .list-status-title .stats #advanced-options-button:hover::after {
   width: 100px;
   opacity: 1;
 }
@@ -1425,35 +1393,64 @@ a.status-button:hover {
 	width: 1055px;
 }
 
+/* Stats */
+
+#show-stats-button {
+    font-size: 0;
+    position: inherit;
+    padding: 5px 15px;
+    right: 28px;
+    height: 30px;
+    width: 17px;
+}
+
 .fa-bar-chart-o:before, .fa-bar-chart:before {
-    content: "\f078" !important;
-	font-size: 14px;
+    content: "";
+    font-size: 13px;
 }
 
-.list-container .list-unit .list-status-title .stats {
-    right: 0px;
-    float: right;
-    background-color: #f10834;
-    height: 100%;
-    line-height: 40px;
-    padding: 0 10px;
+/* Filters */
+
+#advanced-options-button {
+    font-size: 0;
+    position: inherit;
+    padding: 5px 8px 5px 14px;
+    right: -12px;
+    height: 30px;
+    width: 17px;
+}
+
+.fa-filter:before {
+    content: "";
+    font-size: 13px;
+}
+
+#advanced-options .filter-widget.title input[type=text],#advanced-options select{
+	border: 0;
+	background-color: #3c3c3c;
+}
+
+#advanced-options .filter-widget select {
+    border: 0;
+    margin-right: 8px;
     font-size: 12px;
-    text-transform: uppercase;
+    background-color: #3c3c3c;
 }
 
-.list-container .list-unit .list-status-title .stats a {
-	padding: 5px;
-    margin: 0;
-    outline: none;
-    caret-color: #ffffff;
-    color: #ffffff;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    font-weight: bold;
-    font-family: 'verdana', sans-serif;
-    font-size: 11px;
+#advanced-options {
     border: none;
+    border-top: 2px solid #f10834;
+    color: #ffffff !important;
+    background-color: #191919 !important;
+    top: 364px;
+    width: 1055px;
+	z-index: 2 !important;
 }
+#fancybox-overlay{z-index: 0 !important;}
+#fancybox-overlay {background-color: transparent !important;}
+#advanced-options .sort-widget input[type=radio]:checked:disabled + label {color: #ffffff !important;}
+
+/*================================*/
 
 .list-unit .list-status-title .text {
 	clip-path: polygon(15% 100%, 100% 100%, 100% 0, 0px 0px);
