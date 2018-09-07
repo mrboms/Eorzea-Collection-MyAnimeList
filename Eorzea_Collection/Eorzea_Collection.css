@@ -270,9 +270,9 @@ i.fa.fa-sort-asc.sort-icon,
 /* Cover Block */
 
 .list-container .cover-block {
-    background-image: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/cover-block-2.png");
+    background-image: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/cover-block-10.png");
     width: 1053px;
-    height: 250px;
+    height: 550px;
     background-color: #191919;
     margin-bottom: 52px;
     margin-left: 0;
@@ -351,7 +351,7 @@ i.fa.fa-sort-asc.sort-icon,
 }
 
 .list-table>tbody:first-of-type {
-    top: 264px;
+    top: 564px;
     position: absolute;
     right: 306px;
     cursor: pointer;
@@ -925,7 +925,7 @@ a[href="/login.php"]:after {
 
 /* Header Height */
 .list-menu-float {
-  top: 329px !important;
+  top: 629px !important;
 }
 
 /* Footer Font Color */
