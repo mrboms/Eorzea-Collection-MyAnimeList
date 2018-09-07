@@ -53,6 +53,14 @@ I recommend images with resolutions of 1053px250
     background-image: url("your images") !important;
 }
 ```
+
+Background Image
+
+```css
+body {
+    background-image: url("Your images") !important;
+}
+```
 ## MIT License
 
 Copyright (c) 2018 Murakumo-JP
