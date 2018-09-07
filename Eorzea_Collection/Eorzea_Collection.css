@@ -261,7 +261,7 @@ i.fa.fa-sort-asc.sort-icon,
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/search.png") #f10834;
+    background: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/search.png") #f10834;
     width: 28px;
     height: 28px;
     font-size: 0;
@@ -270,7 +270,7 @@ i.fa.fa-sort-asc.sort-icon,
 /* Cover Block */
 
 .list-container .cover-block {
-    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
+    background-image: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/cover-block-2.png");
     width: 1053px;
     height: 250px;
     background-color: #191919;
@@ -300,7 +300,7 @@ i.fa.fa-sort-asc.sort-icon,
     margin-top: 0px;
     padding: 2px 6px 2px 14px;
     margin-right: 14px;
-    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/RatingRX.png") #191919f2;
+    background: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/RatingRX.png") #191919f2;
     margin-left: -100%;
     opacity: 1;
 }
