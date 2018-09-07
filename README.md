@@ -2,7 +2,7 @@
 
 Original page design from http://ffxiv.eorzeacollection.com/ by Edeon Vails.
 
-List CSS and adaption by MurakumoJP.
+List CSS and adaption by MurakumoJP (https://myanimelist.net/forum/?topicid=1726107).
 
 ## Preview
 https://myanimelist.net/animelist/MurakumoJP
