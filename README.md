@@ -4,8 +4,9 @@ Original page design from http://ffxiv.eorzeacollection.com/ by Edeon Vails.
 
 List CSS and adaption by MurakumoJP (https://myanimelist.net/forum/?topicid=1726107).
 
+Custom by SKunio.
 ## Preview
-https://myanimelist.net/animelist/MurakumoJP
+https://myanimelist.net/animelist/Skunio
 
 ![Screenshot](Eorzea_Collection/preview/Snapshot.PNG?raw=true)
 
