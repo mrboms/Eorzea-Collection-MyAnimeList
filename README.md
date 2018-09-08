@@ -7,7 +7,7 @@ List CSS and adaption by MurakumoJP (https://myanimelist.net/forum/?topicid=1726
 ## Preview
 https://myanimelist.net/animelist/MurakumoJP
 
-![Screenshot](Eorzea_Collection/preview/Snapshot.png?raw=true)
+![Screenshot](Eorzea_Collection/preview/Snapshot.PNG?raw=true)
 
 ## Features
 
@@ -46,7 +46,7 @@ On the same page, in the Add Custom CSS field, paste the code shown below.
 
 If you want to change the images in CSS then paste this after the code and replace the links to your.
 
-I recommend images with resolutions of 1053px250
+I recommend images with resolutions of 1053px550
 
 ```css
 .list-container .cover-block {
