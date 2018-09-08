@@ -1,13 +1,7 @@
 @charset "UTF-8";
 /*@import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";*/
 
-/* Latest Updates: 02.09.2018
-	Original page design from ffxiv.eorzeacollection.com by Edeon Vails.
-	List CSS and adaption by MurakumoJP.
-	GitHub: https://github.com/Murakumo-JP/MyAnimeList-CSS
-	MyAnimeList Forum: https://myanimelist.net/forum/?topicid=1726107
-	MyAnimeList Profile: https://myanimelist.net/profile/MurakumoJP
-*/
+/* Latest Updates: 08.09.2018 */
 
 ::-webkit-scrollbar {
     height: 9px;
@@ -261,7 +255,7 @@ i.fa.fa-sort-asc.sort-icon,
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/search.png") #99bb10;
+    background: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList/Eorzea_Collection/images/search.png") #99bb10;
     width: 28px;
     height: 28px;
     font-size: 0;
@@ -270,7 +264,7 @@ i.fa.fa-sort-asc.sort-icon,
 /* Cover Block */
 
 .list-container .cover-block {
-    background-image: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/Cover-Block-10.png");
+    background-image: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList/Eorzea_Collection/images/Cover-Block-10.png");
     width: 1053px;
     height: 550px;
     background-color: #191919;
@@ -300,7 +294,7 @@ i.fa.fa-sort-asc.sort-icon,
     margin-top: 0px;
     padding: 2px 6px 2px 14px;
     margin-right: 14px;
-    background: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList//Eorzea_Collection/images/RatingRX.png") #191919f2;
+    background: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList/Eorzea_Collection/images/RatingRX.png") #191919f2;
     margin-left: -100%;
     opacity: 1;
 }
