@@ -570,7 +570,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
     height: 13px;
     width: 197px;
     padding: 5px 0 5px 0;
-    border-top: 2px solid #3e3d3d99;
+    /*border-top: 2px solid #3e3d3d99;*/
     background-color: transparent;
     font-size: 10px;
     opacity: 1;
