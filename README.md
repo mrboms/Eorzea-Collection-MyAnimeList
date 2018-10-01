@@ -41,7 +41,7 @@ On the same page, in the Add Custom CSS field, paste the code shown below.
 
 ```css
 /*@import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";*/
-@import "https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/Eorzea_Collection.css";
+@import "https://mrboms.github.io/Eorzea-Collection-MyAnimeList/Eorzea_Collection/Eorzea_Collection.css";
 ```
 ## Image Сhanges
 
