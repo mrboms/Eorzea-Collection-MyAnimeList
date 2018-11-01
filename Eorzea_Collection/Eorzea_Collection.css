@@ -267,6 +267,7 @@ i.fa.fa-sort-asc.sort-icon,
     background-image: url("https://mrboms.github.io/Eorzea-Collection-MyAnimeList/Eorzea_Collection/images/Cover-Block-10.png");
     width: 1053px;
     height: 550px;
+    background-repeat: no-repeat;
     background-color: #191919;
     margin-bottom: 52px;
     margin-left: 0;
@@ -1400,6 +1401,7 @@ a.status-button:hover {
 
 .fa-bar-chart-o:before, .fa-bar-chart:before {
     content: "";
+    color: #fff;
     font-size: 13px;
 }
 
@@ -1416,6 +1418,7 @@ a.status-button:hover {
 
 .fa-filter:before {
     content: "";
+    color: #fff;
     font-size: 13px;
 }
 
@@ -1464,13 +1467,14 @@ a.status-button:hover {
     color: #fff;
     text-transform: capitalize;
     position: absolute;
-	z-index: 1;
+    z-index: 1;
 }
 
 .list-container .list-unit .list-stats {
-	width: 1055px;
+    width: 1055px;
     border-top: 2px solid #99bb10;
     background: #191919;
+    color: #fff;
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header {
