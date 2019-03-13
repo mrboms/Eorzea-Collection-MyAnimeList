@@ -1,4 +1,5 @@
 
+/* https://malscraper.azurewebsites.net/covers/anime/Skunio/presets/dataimagelinkafter */
 /* User: Skunio - anime, preset: dataimagelinkafter */
 /* Generated: 2019-03-13T11:10:14.796405Z */
 .data.image a[href^="/anime/37747/"]:after { background-image: url(https://cdn.myanimelist.net/images/anime/1463/97361.jpg); }
