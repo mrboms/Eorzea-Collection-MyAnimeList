@@ -1,4 +1,5 @@
 
+/* https://malscraper.azurewebsites.net/covers/manga/Skunio/presets/dataimagelinkafter */
 /* User: Skunio - manga, preset: dataimagelinkafter */
 /* Generated: 2019-03-13T06:05:34.924915Z */
 .data.image a[href^="/manga/49865/"]:after { background-image: url(https://cdn.myanimelist.net/images/manga/3/87801.jpg); }
